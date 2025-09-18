@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="so">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Boqorka Jaceylka</title>
+    <link rel="stylesheet" href="index.css" />
+    <script type="importmap">
+{
+  "imports": {
+    "@google/genai": "https://esm.run/@google/genai",
+    "markdown-it": "https://esm.sh/markdown-it@^14.1.0",
+    "safevalues/dom": "https://cdn.jsdelivr.net/npm/safevalues@1.2.0/dist/mjs/dom/index.js",
+    "safevalues": "https://cdn.jsdelivr.net/npm/safevalues@1.2.0/dist/mjs/index.js",
+    "safevalues/": "https://aistudiocdn.com/safevalues@^1.2.0/"
+  }
+}
+</script>
+  <link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <header class="app-header">
+      <h1>Boqorka Jaceylka 👑</h1>
+      <p>Kaaliyahaaga AI ee sheeko macaan oo soo jiidasho leh</p>
+    </header>
+    <main id="chat-container">
+      <div id="chat-messages">
+        <div class="message model-message">
+            <div class="content">Salaan! Sideen maanta kuu caawin karaa? I weydii sida sheeko loo bilaabo, salaan subaxnimo, ama soo geli sawir-qaade si aan jawaabta ugu habboon kuu siiyo.</div>
+        </div>
+      </div>
+    </main>
+    <div id="suggestion-chips">
+        <button class="chip">Salaan Subax</button>
+        <button class="chip">Habeen Wanaagsan</button>
+        <button class="chip">Bilaab Sheeko</button>
+        <button class="chip">Farriin Shukaansi</button>
+        <button class="chip">Weydii Su'aal</button>
+        <button class="chip">Jaceyl Suugaaneed</button>
+        <button class="chip">Ka Farixi Qof Xishood Badan</button>
+        <button class="chip">Amaan Macaan</button>
+        <button class="chip">Falanqee Fariinta u Dambaysa</button>
+    </div>
+    <footer id="input-area">
+      <div id="image-preview-container">
+        <img id="image-preview" src="#" alt="Image preview" />
+        <button id="remove-image-btn">&times;</button>
+      </div>
+      <label for="image-upload" class="upload-btn">
+        <i class="fa-solid fa-paperclip"></i>
+      </label>
+      <input type="file" id="image-upload" accept="image/*" />
+      <textarea id="prompt-input" placeholder="Xaaladda ii sheeg ama farriin soo qor..." rows="1"></textarea>
+      <button id="send-btn" aria-label="Dir Farriinta">
+        <i class="fa-solid fa-arrow-up"></i>
+      </button>
+    </footer>
+    <div class="credits">Developed by Ayuub</div>
+    <script type="module" src="/index.tsx"></script>
+  </body>
+</html>
